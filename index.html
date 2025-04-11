@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Portofolio Aesthetic</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet"> 
+  <style>
+    :root {
+      --primary: #6c5ce7;
+      --secondary: #a29bfe;
+      --bg: #f0f0f5;
+      --card-bg: #ffffff;
+      --text: #2d3436;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: var(--card-bg);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      margin-right: 1rem;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--primary);
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      width: 50px;
+      height: 4px;
+      background: var(--secondary);
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      border-radius: 5px;
+    }
+    .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .intro img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .intro h2 {
+      font-size: 1.6rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .intro p {
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 1rem;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    .skills .bar {
+      margin-bottom: 1rem;
+    }
+    .skills .label {
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+    .skills .progress {
+      height: 14px;
+      background: #dfe6e9;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .skills .progress-fill {
+      height: 100%;
+      background: var(--primary);
+      width: 0;
+      animation: fillBar 1s forwards;
+    }
+    @keyframes fillBar {
+      to {
+        width: var(--fill);
+      }
+    }
+    .whatsapp-button {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      margin-top: 2rem;
+    }
+    .whatsapp-button:hover {
+      background: #1ebe5b;
+    }
+    .channel {
+      display: block;
+      margin-top: 1rem;
+      color: var(--primary);
+      text-decoration: none;
+    }
+  </style> 
+ </head> 
+ <body> 
+  <header> 
+   <img src="https://img12.pixhost.to/images/1590/586730630_media.jpg" alt="Logo"> 
+   <h1>Portofolio Saya</h1> 
+  </header> 
+  <main> 
+   <section class="intro"> 
+    <img src="https://img12.pixhost.to/images/1590/586730899_media.jpg" alt="Foto Profil"> 
+    <h2>INTRO : Haruki Kazebayu</h2> 
+    <p> Nama: Bayu Anugraha<br> Other Name: Haruki Kazebayu<br> Umur: 16 Tahun<br> Asal: Indonesia, Banten<br> Profesi: Pelajar SMA<br> Jurusan: IPA </p> 
+   </section> 
+   <section class="services"> 
+    <h2 class="section-title">Layanan</h2> 
+    <div class="card"> 
+     <img src="https://img12.pixhost.to/images/1590/586732857_media.jpg" alt="Icon">Jasa Buat Script Bot WhatsApp 
+    </div> 
+    <div class="card"> 
+     <img src="https://img12.pixhost.to/images/1590/586732859_media.jpg" alt="Icon">Sewa Bot WhatsApp 
+    </div> 
+    <div class="card"> 
+     <img src="https://img12.pixhost.to/images/1591/586735507_media.jpg" alt="Icon">Nokos (Nomor Kosong)
+    </div> 
+    <div class="card"> 
+     <img src="https://img12.pixhost.to/images/1590/586732866_media.jpg" alt="Icon">Panel Pterodactyl 
+    </div> 
+    <div class="card"> 
+     <img src="https://img12.pixhost.to/images/1590/586732852_media.jpg" alt="Icon">Jasa Buat Web
+    </div> 
+    <div class="card"> 
+     <img src="https://img12.pixhost.to/images/1591/586736289_media.jpg" alt="Icon">Script Bot WhatsApp 
+    </div> 
+    <div class="card"> 
+     <img src="https://img12.pixhost.to/images/1590/586732859_media.jpg" alt="Icon"> Jasa Buat Web/Akun Wa Jadi Ai
+    </div> 
+    <div class="card"> 
+     <img src="https://via.placeholder.com/60" alt="Icon">Jasa Buat Web/Akun Wa Jadi Bot Image Generator 
+    </div> 
+    <div class="card"> 
+     <img src="https://via.placeholder.com/60" alt="Icon">Jasa Buat Web/Akun Wa Jadi Bot Font Style 
+    </div> 
+   </section> 
+   <section class="about"> 
+    <h2 class="section-title">Tentang Saya</h2> 
+    <p>Saya adalah developer kreatif yang menyediakan berbagai jasa digital seperti pembuatan bot WhatsApp, website portofolio, dan layanan lainnya dengan desain modern dan fungsional.</p> 
+   </section> 
+   <section class="skills"> 
+    <h2 class="section-title">Skill</h2> 
+    <div class="bar"> 
+     <div class="label">
+       HTML - 60% 
+     </div> 
+     <div class="progress"> 
+      <div class="progress-fill" style="--fill: 60%;"></div> 
+     </div> 
+    </div> 
+    <div class="bar"> 
+     <div class="label">
+       CSS - 50% 
+     </div> 
+     <div class="progress"> 
+      <div class="progress-fill" style="--fill: 50%;"></div> 
+     </div> 
+    </div> 
+    <div class="bar"> 
+     <div class="label">
+       JavaScript - 30% 
+     </div> 
+     <div class="progress"> 
+      <div class="progress-fill" style="--fill: 30%;"></div> 
+     </div> 
+    </div> 
+   </section> <a class="whatsapp-button" href="https://wa.me/62895406178006" target="_blank">Hubungi Saya di WhatsApp</a> <a class="channel" href="https://whatsapp.com/channel/0029Vb5ozMVK5cDIvhVl5p3Z" target="_blank">Saluran WhatsApp Saya</a> 
+  </main> 
+ </body>
+</html>
